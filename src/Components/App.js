@@ -1,9 +1,22 @@
 import React from 'react';
 import './style.css' ;
 
+// components
+import { Header } from './Header';
+
 const App = () => {
   return (
-    <div>Hello World!</div>
+    <React.Fragment>
+      <Header /> 
+
+      <section>Esto es el section1</section>
+
+      <section>Esto es el section2 </section> 
+
+      <section>Esto es el section3</section>
+
+      <footer> Esto es el footer</footer>
+    </React.Fragment>
   )
 }
 
