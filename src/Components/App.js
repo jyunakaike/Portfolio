@@ -4,19 +4,16 @@ import './style.css' ;
 // components
 import { Header } from './Header';
 import { Introduction } from './Introduction';
+import { Education } from './Education';
 
 const App = () => {
   return (
     <React.Fragment>
       <Header /> 
       <Introduction />
+      <Education /> 
 
 
-
-
-      <section>Esto es el section1</section>
-
-      <section>Esto es el section2 </section> 
 
       <section>Esto es el section3</section>
 
