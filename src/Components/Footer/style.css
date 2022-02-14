@@ -1,0 +1,32 @@
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: deeppink;
+}
+.footer-container {
+    width:90%;
+    height:100%;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 0 2.5%;
+    display:flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.footer-container--list{
+    display: flex;
+        justify-content: space-between;
+}
+
+.footer-container--list li{
+    padding: 0 10px;    
+}
+
+
+
+
+
+
+
+

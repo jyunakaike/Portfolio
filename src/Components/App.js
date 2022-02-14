@@ -6,6 +6,7 @@ import { Header } from './Header';
 import { Introduction } from './Introduction';
 import { Experience } from './Experience';
 import { Education } from './Education';
+import { Footer } from './Footer';
 
 const App = () => {
   return (
@@ -14,12 +15,8 @@ const App = () => {
       <Introduction />
       <Experience />
       <Education /> 
+      <Footer />
 
-
-
-      <section>Esto es el section3</section>
-
-      <footer> Esto es el footer</footer>
     </React.Fragment>
   )
 }
