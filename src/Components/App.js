@@ -4,6 +4,7 @@ import './style.css' ;
 // components
 import { Header } from './Header';
 import { Introduction } from './Introduction';
+import { Experience } from './Experience';
 import { Education } from './Education';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <React.Fragment>
       <Header /> 
       <Introduction />
+      <Experience />
       <Education /> 
 
 

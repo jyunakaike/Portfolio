@@ -1,0 +1,17 @@
+.Experience-container{
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 0 2.5%;
+
+    background-color: chartreuse;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.Experience-container{
+    padding-top: 10%;
+    font-size: 1.5rem;
+}
+
+
