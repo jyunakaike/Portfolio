@@ -15,5 +15,21 @@
         align-items: center;
 }
 
+.Header-Logo{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.Header-Categories{
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+
 
 
