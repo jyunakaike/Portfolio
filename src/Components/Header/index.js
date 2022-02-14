@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './style.css';
 
-export const Header = ({expRef,eduRef,infoRef,setRef}) => {
+export const Header = ({expRef,eduRef,infoRef,aboutRef,setRef}) => {
 
     const [showFixed, setShowFixed] = useState(false)
 
@@ -25,9 +25,10 @@ export const Header = ({expRef,eduRef,infoRef,setRef}) => {
             <div className={` ${(showFixed) ? "small" : "Header-container"}`}>
                  <span className='Header-Logo'>Jyunik</span>
                  <div className='Header-Categories'>
-                     <h2 onClick={() => sectionClick(infoRef)}>Section1</h2>
-                     <h2 onClick={() => sectionClick(expRef)}>Section2</h2>
-                     <h2 onClick={() => sectionClick(eduRef)}>Section3</h2>
+                     <h2 onClick={() => sectionClick(infoRef)}>Intro</h2>
+                     <h2 onClick={() => sectionClick(expRef)}>Works</h2>
+                     <h2 onClick={() => sectionClick(eduRef)}>Education</h2>
+                     <h2 onClick={() => sectionClick(aboutRef)}>About Me</h2>
                  </div>
              </div>
         </header>
