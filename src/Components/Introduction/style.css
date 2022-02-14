@@ -1,0 +1,14 @@
+.Intro-container{
+    height: 90vh;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 2.5%;
+    background-color: blueviolet;
+    display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+.Intro-Title{
+    font-size: 3rem;
+}
+
