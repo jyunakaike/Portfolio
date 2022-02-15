@@ -26,9 +26,9 @@ export const Header = ({expRef,eduRef,infoRef,aboutRef,setRef}) => {
                  <span className='Header-Logo'>Jyunik</span>
                  <div className='Header-Categories'>
                      <h2 onClick={() => sectionClick(infoRef)}>Intro</h2>
-                     <h2 onClick={() => sectionClick(expRef)}>Works</h2>
-                     <h2 onClick={() => sectionClick(eduRef)}>Education</h2>
                      <h2 onClick={() => sectionClick(aboutRef)}>About Me</h2>
+                     <h2 onClick={() => sectionClick(expRef)}>Skills</h2>
+                     <h2 onClick={() => sectionClick(eduRef)}>Education</h2>
                  </div>
              </div>
         </header>

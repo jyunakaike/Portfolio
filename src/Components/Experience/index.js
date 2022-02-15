@@ -11,7 +11,9 @@ export const Experience = ({refer}) => {
 
   return (
       <section ref={myRef} className='Experience-container'>
-          <h2>What I can Do</h2>
+          <div className='Experience-detail-container'>
+            <h2>What I can Do</h2>
+          </div>
       </section>
   )
 }

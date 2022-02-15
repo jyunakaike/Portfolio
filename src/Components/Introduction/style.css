@@ -5,10 +5,30 @@
     padding: 0 2.5%;
     background-color: blueviolet;
     display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 }
 .Intro-Title{
+    width: 60%;
+    height: 90%;
+    display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    background-color: rebeccapurple;
+}
+
+.Intro-Title h1{
     font-size: 3rem;
 }
 
+.Intro-Detail{
+    width: 40%;
+    height: 90%;
+    display:flex;
+        justify-content: center;
+        align-items: center;
+    background-color: blue;
+
+
+}

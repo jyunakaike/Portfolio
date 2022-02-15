@@ -32,9 +32,9 @@ const App = () => {
     <React.Fragment>
       <Header expRef={expRef} eduRef={eduRef} infoRef={infoRef} aboutRef={aboutRef}  setRef={setRef} />
       <Introduction refer={setInfoRef} />
+      <Me refer={setAboutRef} />
       <Experience refer={setExpRef} />
       <Education refer={setEduRef} />
-      <Me refer={setAboutRef} />
       <Footer />
     </React.Fragment>
   )

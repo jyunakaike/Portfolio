@@ -11,9 +11,9 @@ export const Introduction = ({refer}) => {
   return (
     <section ref={myRef} className="Intro-container">
         <article className='Intro-Title'>   
-            <h1>Hi! I'm Jyun, frontEnd Developer </h1> 
+            <h1>Hi! I'm Jorge Jyun Nakamura </h1>  
         </article>
-        <article>
+        <article className='Intro-Detail'>
             Aqui hay una imagen 
         </article>
         

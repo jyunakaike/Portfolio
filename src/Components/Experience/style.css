@@ -7,11 +7,18 @@
     background-color: chartreuse;
     display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: flex-start;
+        /* align-items: center; */
 }
-.Experience-container h2{
-    padding-top: 10%;
+.Experience-detail-container {
+    margin-top: 10%;
+    background-color:beige;
+    width: 100%;
+    height: 80%;
+}
+.Experience-detail-container h2 {
     font-size: 1.5rem;
 }
+
 
 
