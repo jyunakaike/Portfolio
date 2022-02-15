@@ -49,8 +49,12 @@
 } 
 
 .About-contact img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 200px;
+
+    height: 100%;
+    max-height: 200px;
+
     border-radius:100%;
     border: 3px solid black;
     margin: 0 auto ;
