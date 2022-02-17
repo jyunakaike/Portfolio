@@ -19,12 +19,17 @@
     height: 70%;
     margin-top: 10%;
     background-color: blanchedalmond;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 }
 
 .About-detail h2{
     margin: 10px 0;
     font-size: 1.3rem;
 }
+
+
 
 .About-detail h3{
     margin: 10px 0;
