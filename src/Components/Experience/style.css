@@ -4,7 +4,10 @@
     margin: 0 auto;
     padding: 0 2.5%;
 
+
+    /* layTest */
     background-color: chartreuse;
+    
     display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -12,12 +15,165 @@
 }
 .Experience-detail-container {
     margin-top: 10%;
+    margin-bottom: 5%;
+
+    /* LayTest  */
     background-color:beige;
+
     width: 100%;
     height: 80%;
 }
-.Experience-detail-container h2 {
+.Experience-header{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 2rem;
+
+    /* lay test */
+    background-color: brown;
+    border-radius: 20px;
 }
+
+.Experience-header h2{
+    margin-bottom: 10px;
+}
+
+.Experience-container-input{
+    height: 50%;
+    margin-bottom: 40px;
+    
+    display: flex;
+        justify-content: space-between;
+
+
+    /* laytest */
+    background-color:antiquewhite;
+    border-radius: 20px;
+    
+}
+
+.Experience-input{
+    width:45%;
+    display: flex;
+        justify-content: center;
+}
+
+.Experience-input input{
+    width: 100%; 
+    border-radius: 8px;
+    text-align: right;
+    padding: 2.5%;
+
+}
+
+.Experience-filters{
+    width:45%;
+    height: 100%;
+    /* border: none; */
+    border-radius: 8px;
+
+    background-color: rebeccapurple;
+    border-radius: 20px;
+
+    display: flex;
+        align-items:center;
+        gap: 10px
+        
+}
+
+.Experience-filters span{
+    height: 30px;
+
+    border-radius: 5px;
+    background-color: lightblue;
+
+    padding: 5px
+}
+
+
+/* card */
+
+.Experience-card-container{
+    width: 100%;
+
+    /* height: 80%; */
+    height: 72%;
+    
+    
+    /* laytest */
+    background-color: aqua;
+    border-radius: 20px;
+
+    display:flex; 
+        justify-content: center;
+}
+
+.Experience-card{
+    width: 20%;
+    height:90%;
+
+    border: solid 1px black;
+    border-radius: 5px;
+
+    margin-right: 2.5%;
+    display: flex;
+        flex-direction: column;
+}
+
+.Card-image{
+    width: 100%;
+    height: 40%;
+
+    border-radius: 5px 5px 0 0; 
+    /* background-color: cadetblue; */
+}
+
+.Card-detail{
+    width: 100%;
+    height: 60%;
+
+    padding: 2.5%;
+
+    border-radius: 0px 0px 5px 5px;
+    /* background-color:violet; */
+
+    display: flex;
+        flex-direction: column;
+}
+
+.Card-detail-title {
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+}
+
+.Card-detail-skills {
+    display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:10px;
+
+    height: 25%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.Card-detail-skills span{
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.Card-detail-description{
+    height: 50%;
+    overflow: hidden;
+
+
+}
+
+
+
+
 
 
 
