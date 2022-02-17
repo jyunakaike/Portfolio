@@ -2,7 +2,7 @@
     position: fixed;
     background-color: aqua;
     width: 100%;
-    height: 128px;
+    height: 20vh;
 }
 
 .Header-container {
@@ -51,7 +51,7 @@
 }
 
 .Header-Categories h2{
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
 }
 
 
