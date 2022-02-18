@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from 'react'
 import './style.css'
 
+// component 
+import { Card } from './Cards';
+
+
 export const Experience = ({ refer }) => {
 
   const myRef = useRef(null);
@@ -33,7 +37,13 @@ export const Experience = ({ refer }) => {
 
         <div className='Experience-card-container' >
           {/* cards */}
-          <div className='Experience-card' >
+
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+
+          {/* <div className='Experience-card' >
             <div className='Card-image'>Imagen</div>
             <div className='Card-detail'>
               <div className='Card-detail-title'>
@@ -52,10 +62,10 @@ export const Experience = ({ refer }) => {
               </div>
             </div>
 
-          </div>
+          </div> */}
 
 
-          <div className='Experience-card' >
+          {/* <div className='Experience-card' >
             <div className='Card-image'>Imagen</div>
             <div className='Card-detail'>
               <div className='Card-detail-title'>
@@ -77,7 +87,7 @@ export const Experience = ({ refer }) => {
           <div className='Experience-card' >
           </div>
           <div className='Experience-card' >
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
