@@ -1,17 +1,11 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import './style.css'
 
 import profile from '../../assets/image/profile.jpg'
 
-export const Me = ({ refer }) => {
-    const myRef = useRef(null)
-
-    useEffect(() => {
-        refer(myRef)
-    }, [])
-
+export const Me = () => {
     return (
-        <section ref={myRef} className='About-container'>
+        <section className='About-container' id='About-me'>
             <div className='About-detail'>
                 <div>
                     <h2>About Me</h2>

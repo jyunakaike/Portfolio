@@ -1,20 +1,13 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import './style.css'
 
 // component 
 import { Card } from './Cards';
 
 
-export const Experience = ({ refer }) => {
-
-  const myRef = useRef(null);
-
-  useEffect(() => {
-    refer(myRef)
-  }, [])
-
+export const Experience = () => {
   return (
-    <section ref={myRef} className='Experience-container'>
+    <section className='Experience-container' id='Experience'>
       <div className='Experience-detail-container'>
         <div className='Experience-header'>
           <h2>What I can Do</h2>

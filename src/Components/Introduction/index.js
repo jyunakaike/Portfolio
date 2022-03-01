@@ -1,15 +1,9 @@
-import React, {useRef, useEffect} from 'react'
+import React from 'react'
 import './style.css'
 
-export const Introduction = ({refer}) => {
-  const myRef = useRef(null);
-
-  useEffect(() => {
-    refer(myRef)
-  }, [])
-
+export const Introduction = () => {
   return (
-    <section ref={myRef} className="Intro-container">
+    <section className="Intro-container" id='Introduction'>
         <article className='Intro-Title'>   
             <h1>Hi! I'm Jorge Jyun Nakamura </h1>  
         </article>
