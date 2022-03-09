@@ -40,6 +40,14 @@ export default {
             "description": "build out this E-commerce product page with filtering app with optimal layout for the component depending on their device's screen size. Users should be able to Open a lightbox gallery by clicking on the large product image,Switch the large product image by clicking on the small thumbnail images,Add items to the cart,View the cart and remove items from it; this challenge is fron frontendmentor",
             "page": "https://e-commerce-product-page-challenge-hub.vercel.app/",
         },
+        {
+            "id":6,
+            "image": "Batabit.jpg",
+            "title": "Batabit",
+            "languages":["html","css","mobileFirst" ],
+            "description": "This Batabit landingpage with filtering app with optimal layout for the component depending on their device's screen size. this landing page is made by Diego De Granda member of Platzi",
+            "page": "https://jyunakaike.github.io/batabit/",
+        },
         
     ]
 
