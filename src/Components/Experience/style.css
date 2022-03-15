@@ -37,7 +37,7 @@
 }
 
 .Experience-container-input{
-    height: 50%;
+    height: 75%;
     margin-bottom: 40px;
     
     display: flex;
@@ -56,12 +56,27 @@
         justify-content: center;
 }
 
-.Experience-input input{
+.Experience-input-container{
     width: 100%; 
+    height: 110%;
     border-radius: 8px;
     text-align: right;
     padding: 2.5%;
+    background-color: gray;
+    display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
 
+}
+
+.Experience-input-container-filter{
+    width: auto; 
+    height: auto;
+    max-height: 70%;
+    min-height: 50%;
+    border-radius: 8px;
+    padding: 2%;
+    background-color: red;
 }
 
 .Experience-filters{
@@ -74,6 +89,7 @@
     border-radius: 20px;
 
     display: flex;
+        flex-wrap: wrap;
         align-items:center;
         gap: 10px
         

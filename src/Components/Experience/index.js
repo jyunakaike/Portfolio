@@ -44,11 +44,11 @@ export const Experience = () => {
           <div className='Experience-container-input' >
             <div className='Experience-input'>
               {/* <input  /> */}
-              <div>
+              <div className='Experience-input-container'>
                 {
                   (showEtiquete)
                   ? 
-                   showEtiquete.map(etiquete =><div>{etiquete}</div> )
+                   showEtiquete.map(etiquete =><div className='Experience-input-container-filter'>{etiquete}</div> )
                   : 
                     null
                 }
