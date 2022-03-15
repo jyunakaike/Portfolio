@@ -9,7 +9,8 @@ import { Card } from '../Experience/Cards';
 export const SliderImage = ({ listCards }) => {
     let settings = {
         dot: true,
-        // infinite: true,
+        centerMode: true,
+        infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
