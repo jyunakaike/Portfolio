@@ -66,6 +66,20 @@
 .Card-detail-description{
     height: 50%;
     overflow: hidden;
-
-
 }
+
+
+@media (max-height:720px) {
+
+    .Experience-card{
+        width: 70%;
+        height:250px;
+        border: solid 1px black;
+        border-radius: 5px;
+    
+        margin-right: 2.5%;
+        display: flex;
+            flex-direction: column;
+    }
+}
+

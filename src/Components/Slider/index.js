@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 // component 
 import { Card } from '../Experience/Cards';
 
-export const SliderImage = ({ listCards }) => {
+export const SliderImage = ({ children }) => {
     let settings = {
         dot: true,
         centerMode: true,
@@ -23,7 +23,7 @@ export const SliderImage = ({ listCards }) => {
 
         // <div className='Experience-card-container' >
             <Slider {...settings}>
-                {listCards.map(listCard => <Card key={listCard.id}  {...listCard} />)}
+                {children}
             </Slider>
         // </div>
     )

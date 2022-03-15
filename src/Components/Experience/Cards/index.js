@@ -3,7 +3,7 @@ import './styles.css'
 // import CardImage from '../../../assets/image/faq-accordion.jpg'
 
 
-export const Card = ({image , title, languages, description, page}) => {
+export const Card = ({image , title, languages, description, page, filterEtiquete}) => {
     const imagen = "faq-accordion.jpg"
     
     return (

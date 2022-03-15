@@ -18,6 +18,7 @@ export const Experience = () => {
   let etiquete = [];
 
   const filterEtiquete = (etiquete)=>{
+    console.log(etiquete)
     if(showEtiquete.length === 0 ){
       setShowEtiquete([etiquete]);
     }
@@ -69,7 +70,9 @@ export const Experience = () => {
           </div>
         </div>
 
-        <SliderImage  listCards={listCards} />
+        <SliderImage  listCards={listCards} >
+           {listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)}
+        </SliderImage>
         {/* <div className='Experience-card-container' > */}
           {/* cards */}
           {/* <SliderImage  listCards={listCards} /> */}

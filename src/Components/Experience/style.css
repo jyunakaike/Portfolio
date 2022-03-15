@@ -121,6 +121,22 @@
 
 
 
+@media (max-height:720px) {
+
+    .Experience-header{
+        width: 100%;
+        height: 30%;
+        margin-bottom: 3rem;
+        /* lay test */
+        background-color: brown;
+        border-radius: 20px;
+    }
+
+}
+
+
+
+
 
 
 
