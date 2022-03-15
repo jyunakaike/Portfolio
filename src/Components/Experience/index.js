@@ -9,8 +9,30 @@ import initialState from '../db/initialState'
 
 
 export const Experience = () => {
+  const [showEtiquete, setShowEtiquete] = useState([])
+
 
   const listCards = initialState.portfolio
+
+  let etiquete = [];
+
+  const filterEtiquete = (etiquete)=>{
+    if(showEtiquete.length === 0 ){
+      setShowEtiquete([etiquete]);
+    }
+    else {
+      (showEtiquete.includes(etiquete))
+      ?null
+      :setShowEtiquete([...showEtiquete, etiquete])
+    }
+  }
+
+  // useEffect(() => {
+  //   console.log(showEtiquete)
+  
+  // }, [showEtiquete])
+  
+
 
   return (
     <section className='Experience-container' id='Experience'>
@@ -20,15 +42,29 @@ export const Experience = () => {
 
           <div className='Experience-container-input' >
             <div className='Experience-input'>
-              <input />
+              {/* <input  /> */}
+              <div>
+                {
+                  (showEtiquete)
+                  ? 
+                   showEtiquete.map(etiquete =><div>{etiquete}</div> )
+                  : 
+                    null
+                }
+                
+              </div>
+
             </div>
 
             <div className='Experience-filters'>
               Filter:
-              <span>React</span>
-              <span>Html</span>
-              <span>Js</span>
-              <span>css</span>
+              <span onClick={()=>filterEtiquete("react")}>React</span>
+              <span onClick={()=>filterEtiquete("html")}>Html</span>
+              <span onClick={()=>filterEtiquete("js")}>Js</span>
+              <span onClick={()=>filterEtiquete("css")}>Css</span>
+              <span onClick={()=>filterEtiquete("responsive")}>Responsive</span>
+              <span onClick={()=>filterEtiquete("nextjs")}>Nextjs</span>
+              <span onClick={()=>filterEtiquete("mobilefirst")}>mobileFirst</span>
             </div>
 
           </div>

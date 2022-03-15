@@ -1,23 +1,23 @@
 import React from 'react'
 import './styles.css'
+// import CardImage from '../../../assets/image/faq-accordion.jpg'
 
-export const Card = ({Image , title, languages, description, page}) => {
+
+export const Card = ({image , title, languages, description, page}) => {
+    const imagen = "faq-accordion.jpg"
+    
     return (
         <div className='Experience-card' >
-            <div className='Card-image'>Imagen</div>
+            <img className='Card-image' src={ require(`../../../assets/image/${image}`  ) } />
             <div className='Card-detail'>
                 <div className='Card-detail-title'>
                     <h3>{title}</h3>
                 </div>
 
                 <div className='Card-detail-skills'>
-                    {languages.map(language => <span>{language}</span>)
-
+                    {
+                    languages.map(language => <span key={language}>{language}</span>)
                     }
-                    {/* <span>React</span>
-                    <span>Html</span>
-                    <span>JS</span>
-                    <span>css</span> */}
                 </div>
 
                 <div className='Card-detail-description'>
