@@ -1,0 +1,29 @@
+import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// component 
+import { Card } from '../Experience/Cards';
+
+export const SliderImage = ({ listCards }) => {
+    let settings = {
+        dot: true,
+        // infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        cssEase: "linear"
+    }
+    // console.log(listCards)
+
+    return (
+        // listCards.map(listCar => <Card key={listCard.id} /> )
+
+        // <div className='Experience-card-container' >
+            <Slider {...settings}>
+                {listCards.map(listCard => <Card key={listCard.id}  {...listCard} />)}
+            </Slider>
+        // </div>
+    )
+}

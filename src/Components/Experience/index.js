@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import './style.css'
+import React, { useEffect, useState } from 'react';
+import './style.css';
 
 // component 
 import { Card } from './Cards';
+import { SliderImage } from '../Slider';
 
 // db 
 import initialState from '../db/initialState'
@@ -51,9 +52,7 @@ export const Experience = () => {
                   : 
                     null
                 }
-                
               </div>
-
             </div>
 
             <div className='Experience-filters'>
@@ -70,14 +69,15 @@ export const Experience = () => {
           </div>
         </div>
 
-        <div className='Experience-card-container' >
+        <SliderImage  listCards={listCards} />
+        {/* <div className='Experience-card-container' > */}
           {/* cards */}
-          {
+          {/* <SliderImage  listCards={listCards} /> */}
+          {/* {
             // listCards.map(listCar => <Card key={listCard.id} /> )
             listCards.map(listCard =><Card key={listCard.id}  {...listCard} />)
-          }
-
-        </div>
+          } */}
+        {/* </div> */}
       </div>
     </section>
   )
