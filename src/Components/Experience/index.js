@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 
+import {ImCross} from "react-icons/im"
+
+
 // component 
 import { Card } from './Cards';
 import { SliderImage } from '../Slider';
@@ -17,23 +20,34 @@ export const Experience = () => {
 
   let etiquete = [];
 
-  const filterEtiquete = (etiquete)=>{
+  const clearFilter = () => {
+    setShowEtiquete([]);
+  }
+
+  const clearFilterItem = () => {
+    const arr = showEtiquete.filter((item) => item !== i)
+    setShowEtiquete(arr);
+  }
+
+
+
+  const filterEtiquete = (etiquete) => {
     console.log(etiquete)
-    if(showEtiquete.length === 0 ){
+    if (showEtiquete.length === 0) {
       setShowEtiquete([etiquete]);
     }
     else {
       (showEtiquete.includes(etiquete))
-      ?null
-      :setShowEtiquete([...showEtiquete, etiquete])
+        ? null
+        : setShowEtiquete([...showEtiquete, etiquete])
     }
   }
 
   // useEffect(() => {
   //   console.log(showEtiquete)
-  
+
   // }, [showEtiquete])
-  
+
 
 
   return (
@@ -46,37 +60,45 @@ export const Experience = () => {
             <div className='Experience-input'>
               {/* <input  /> */}
               <div className='Experience-input-container'>
-                {
-                  (showEtiquete)
-                  ? 
-                   showEtiquete.map(etiquete =><div className='Experience-input-container-filter'>{etiquete}</div> )
-                  : 
-                    null
-                }
+                <div className='Experience-input-container-1'>
+                  {
+                    (showEtiquete)
+                      ?
+                      showEtiquete.map(etiquete => <div className='Experience-input-container-filter'>{etiquete}</div>)
+                      :
+                      null
+                  }
+                </div>
+                <div className='Experience-input-container-2'>
+                  <ImCross onClick={clearFilter} />
+
+                </div>
+
+
               </div>
             </div>
 
             <div className='Experience-filters'>
               Filter:
-              <span onClick={()=>filterEtiquete("react")}>React</span>
-              <span onClick={()=>filterEtiquete("html")}>Html</span>
-              <span onClick={()=>filterEtiquete("js")}>Js</span>
-              <span onClick={()=>filterEtiquete("css")}>Css</span>
-              <span onClick={()=>filterEtiquete("responsive")}>Responsive</span>
-              <span onClick={()=>filterEtiquete("nextjs")}>Nextjs</span>
-              <span onClick={()=>filterEtiquete("mobilefirst")}>mobileFirst</span>
+              <span onClick={() => filterEtiquete("react")}>React</span>
+              <span onClick={() => filterEtiquete("html")}>Html</span>
+              <span onClick={() => filterEtiquete("js")}>Js</span>
+              <span onClick={() => filterEtiquete("css")}>Css</span>
+              <span onClick={() => filterEtiquete("responsive")}>Responsive</span>
+              <span onClick={() => filterEtiquete("nextjs")}>Nextjs</span>
+              <span onClick={() => filterEtiquete("mobilefirst")}>mobileFirst</span>
             </div>
 
           </div>
         </div>
 
-        <SliderImage  listCards={listCards} >
-           {listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)}
+        <SliderImage listCards={listCards} >
+          {listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)}
         </SliderImage>
         {/* <div className='Experience-card-container' > */}
-          {/* cards */}
-          {/* <SliderImage  listCards={listCards} /> */}
-          {/* {
+        {/* cards */}
+        {/* <SliderImage  listCards={listCards} /> */}
+        {/* {
             // listCards.map(listCar => <Card key={listCard.id} /> )
             listCards.map(listCard =><Card key={listCard.id}  {...listCard} />)
           } */}
