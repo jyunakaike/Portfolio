@@ -16,15 +16,9 @@ export const SliderImage = ({ children }) => {
         slidesToScroll: 1,
         cssEase: "linear"
     }
-    // console.log(listCards)
-
     return (
-        // listCards.map(listCar => <Card key={listCard.id} /> )
-
-        // <div className='Experience-card-container' >
             <Slider {...settings}>
                 {children}
             </Slider>
-        // </div>
     )
 }

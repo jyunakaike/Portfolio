@@ -29,8 +29,6 @@ export const Experience = () => {
     setShowEtiquete(arr);
   }
 
-
-
   const filterEtiquete = (etiquete) => {
     console.log(etiquete)
     if (showEtiquete.length === 0) {
@@ -42,14 +40,6 @@ export const Experience = () => {
         : setShowEtiquete([...showEtiquete, etiquete])
     }
   }
-
-  // useEffect(() => {
-  //   console.log(showEtiquete)
-
-  // }, [showEtiquete])
-
-
-
   return (
     <section className='Experience-container' id='Experience'>
       <div className='Experience-detail-container'>
@@ -119,18 +109,7 @@ export const Experience = () => {
               listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
           }
 
-          
-
-
         </SliderImage>
-        {/* <div className='Experience-card-container' > */}
-        {/* cards */}
-        {/* <SliderImage  listCards={listCards} /> */}
-        {/* {
-            // listCards.map(listCar => <Card key={listCard.id} /> )
-            listCards.map(listCard =><Card key={listCard.id}  {...listCard} />)
-          } */}
-        {/* </div> */}
       </div>
     </section>
   )
