@@ -12,7 +12,7 @@ export const SliderImage = ({ children }) => {
         centerMode: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         cssEase: "linear"
     }

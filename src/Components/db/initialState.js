@@ -36,7 +36,7 @@ export default {
             "id":5,
             "image": "E-commerce-product-page.jpg",
             "title": "E-commerce product page",
-            "languages":["html","css", "Nextjs","react", "responsive", "js" ],
+            "languages":["html","css", "nextjs","react", "responsive", "js" ],
             "description": "build out this E-commerce product page with filtering app with optimal layout for the component depending on their device's screen size. Users should be able to Open a lightbox gallery by clicking on the large product image,Switch the large product image by clicking on the small thumbnail images,Add items to the cart,View the cart and remove items from it; this challenge is fron frontendmentor",
             "page": "https://e-commerce-product-page-challenge-hub.vercel.app/",
         },

@@ -93,7 +93,6 @@
     background-color: red;
     display: grid;
     place-items: center;
-
 }
 
 
@@ -104,11 +103,6 @@
     display: grid;
         place-items: center;
 }
-
-
-
-
-
 
 .Experience-filters{
     width:45%;

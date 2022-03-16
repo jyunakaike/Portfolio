@@ -93,7 +93,35 @@ export const Experience = () => {
         </div>
 
         <SliderImage listCards={listCards} >
-          {listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)}
+          {
+            (showEtiquete.length !== 0)
+            ?
+              listCards.filter(item =>{
+                const va1 = item.languages;
+                const va2 = showEtiquete
+
+                const intersection = va1.filter(e => {
+                  return va2.indexOf(e)> -1
+                })
+                const returnBool = () => {
+                  if(intersection.length === va2.length)
+                  {
+                    return true
+                  }
+                  else {
+                    return false
+                  }
+                }
+                return returnBool();
+              })
+              .map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
+            :
+              listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
+          }
+
+          
+
+
         </SliderImage>
         {/* <div className='Experience-card-container' > */}
         {/* cards */}
