@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 
-import {ImCross} from "react-icons/im"
+import { ImCross } from "react-icons/im"
 
 
 // component 
@@ -41,75 +41,76 @@ export const Experience = () => {
     }
   }
   return (
-    <section className='Experience-container' id='Experience'>
-      <div className='Experience-detail-container'>
-        <div className='Experience-header'>
-          <h2>What I can Do</h2>
+    <section className='Experience-bg' >
+      <div className='Experience-container' id='Experience'>
+        <div className='Experience-detail-container'>
+          <div className='Experience-header'>
+            <h2>What I can Do</h2>
 
-          <div className='Experience-container-input' >
-            <div className='Experience-input'>
-              {/* <input  /> */}
-              <div className='Experience-input-container'>
-                <div className='Experience-input-container-1'>
-                  {
-                    (showEtiquete)
-                      ?
-                      showEtiquete.map(etiquete => <div className='Experience-input-container-filter'>{etiquete}</div>)
-                      :
-                      null
-                  }
+            <div className='Experience-container-input' >
+              <div className='Experience-input'>
+                {/* <input  /> */}
+                <div className='Experience-input-container'>
+                  <div className='Experience-input-container-1'>
+                    {
+                      (showEtiquete)
+                        ?
+                        showEtiquete.map(etiquete => <div className='Experience-input-container-filter'>{etiquete}</div>)
+                        :
+                        null
+                    }
+                  </div>
+                  <div className='Experience-input-container-2'>
+                    <ImCross onClick={clearFilter} />
+
+                  </div>
+
+
                 </div>
-                <div className='Experience-input-container-2'>
-                  <ImCross onClick={clearFilter} />
-
-                </div>
-
-
               </div>
-            </div>
 
-            <div className='Experience-filters'>
-              Filter:
-              <span onClick={() => filterEtiquete("react")}>React</span>
-              <span onClick={() => filterEtiquete("html")}>Html</span>
-              <span onClick={() => filterEtiquete("js")}>Js</span>
-              <span onClick={() => filterEtiquete("css")}>Css</span>
-              <span onClick={() => filterEtiquete("responsive")}>Responsive</span>
-              <span onClick={() => filterEtiquete("nextjs")}>Nextjs</span>
-              <span onClick={() => filterEtiquete("mobilefirst")}>mobileFirst</span>
-            </div>
+              <div className='Experience-filters'>
+                Filter:
+                <span onClick={() => filterEtiquete("react")}>React</span>
+                <span onClick={() => filterEtiquete("html")}>Html</span>
+                <span onClick={() => filterEtiquete("js")}>Js</span>
+                <span onClick={() => filterEtiquete("css")}>Css</span>
+                <span onClick={() => filterEtiquete("responsive")}>Responsive</span>
+                <span onClick={() => filterEtiquete("nextjs")}>Nextjs</span>
+                <span onClick={() => filterEtiquete("mobilefirst")}>mobileFirst</span>
+              </div>
 
+            </div>
           </div>
-        </div>
 
-        <SliderImage listCards={listCards} >
-          {
-            (showEtiquete.length !== 0)
-            ?
-              listCards.filter(item =>{
-                const va1 = item.languages;
-                const va2 = showEtiquete
+          <SliderImage listCards={listCards} >
+            {
+              (showEtiquete.length !== 0)
+                ?
+                listCards.filter(item => {
+                  const va1 = item.languages;
+                  const va2 = showEtiquete
 
-                const intersection = va1.filter(e => {
-                  return va2.indexOf(e)> -1
+                  const intersection = va1.filter(e => {
+                    return va2.indexOf(e) > -1
+                  })
+                  const returnBool = () => {
+                    if (intersection.length === va2.length) {
+                      return true
+                    }
+                    else {
+                      return false
+                    }
+                  }
+                  return returnBool();
                 })
-                const returnBool = () => {
-                  if(intersection.length === va2.length)
-                  {
-                    return true
-                  }
-                  else {
-                    return false
-                  }
-                }
-                return returnBool();
-              })
-              .map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
-            :
-              listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
-          }
+                  .map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
+                :
+                listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
+            }
 
-        </SliderImage>
+          </SliderImage>
+        </div>
       </div>
     </section>
   )
