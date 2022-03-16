@@ -10,9 +10,15 @@
         flex-direction: column;
 }
 
-.Card-image{
+.Experience-card a{
     width: 100%;
     height: 40%;
+
+}
+
+.Card-image{
+    width: 100%;
+    height: 100%;
 
     border-radius: 5px 5px 0 0; 
     background-color: cadetblue;
