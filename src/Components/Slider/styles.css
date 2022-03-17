@@ -1,0 +1,27 @@
+/* .slick-arrow { */
+    /* position: absolute; */
+    /* bottom: -40px; */
+    /* height: 5%; */
+    /* background-repeat: no-repeat; */
+/* } */
+
+.slick-prev:before{
+    font-size: 40px ;
+    color: red;
+    
+}
+
+.slick-next:before {
+    font-size: 40px ;
+    color: red;
+
+}
+
+/* .slick-prev:before, .slick-next:before {
+    display: none;
+    width: 20%;
+    height: 20%;
+    color: red;
+    size: 50px;
+
+} */

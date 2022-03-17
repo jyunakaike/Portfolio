@@ -15,7 +15,6 @@ import initialState from '../db/initialState'
 export const Experience = () => {
   const [showEtiquete, setShowEtiquete] = useState([])
 
-
   const listCards = initialState.portfolio
 
   let etiquete = [];
@@ -62,10 +61,7 @@ export const Experience = () => {
                   </div>
                   <div className='Experience-input-container-2'>
                     <ImCross onClick={clearFilter} />
-
                   </div>
-
-
                 </div>
               </div>
 
