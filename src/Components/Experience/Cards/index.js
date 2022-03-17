@@ -6,7 +6,7 @@ export const Card = ({ image, title, languages, description, page, filterEtiquet
 
     return (
         <div className='Experience-card' >
-            <a href={page}>
+            <a href={page} target="_blank">
                 <img className='Card-image' src={require(`../../../assets/image/${image}`)} ></img>
             </a>
             <div className='Card-detail'>
