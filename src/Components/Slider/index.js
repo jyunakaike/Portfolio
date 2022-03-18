@@ -6,10 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 // component 
 import { Card } from '../Experience/Cards';
 
-
 import './styles.css'
-
-
 
 const NextArrow = ({ currentSlide, slideCount, ...props }) => {
     return (
@@ -26,6 +23,7 @@ const NextArrow = ({ currentSlide, slideCount, ...props }) => {
         />
     )
 }
+
 const PrevArrow = ({ currentSlide, slideCount, ...props }) => {
     return (
         <button
@@ -44,9 +42,6 @@ const PrevArrow = ({ currentSlide, slideCount, ...props }) => {
     )
 }
 
-
-
-
 export const SliderImage = ({ children }) => {
     let settings = {
         dot: true,
@@ -58,7 +53,6 @@ export const SliderImage = ({ children }) => {
         cssEase: "linear",
         NextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-
     }
     return (
         <Slider {...settings}>

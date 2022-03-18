@@ -12,7 +12,7 @@
 
 .slick-prev:before{
     font-size: 40px ;
-    color: red;
+    color: var(--red);
     
 }
 
@@ -22,7 +22,7 @@
 
 .slick-next:before {
     font-size: 40px ;
-    color: red;
+    color: var(--red);
 
 }
 

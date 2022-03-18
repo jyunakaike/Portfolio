@@ -1,5 +1,6 @@
 .Intro-bg{
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
+    background-color:var(--brown);
 }
 
 .Intro-container{
@@ -7,7 +8,7 @@
     width: 90%;
     margin: 0 auto;
     padding: 0 2.5%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
         justify-content: space-between;
         align-items: center;
@@ -19,10 +20,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
 
 .Intro-Title h1{
+    /* color: var(--red); */
+    color: white;
 }
 
 .Intro-Detail{
@@ -31,7 +34,8 @@
     display:flex;
         justify-content: center;
         align-items: center;
-    background-color: blue;
+    /* background-color: blue; */
+    color: var(--red);
 
 
 }

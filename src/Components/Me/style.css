@@ -1,5 +1,6 @@
 .About-bg{
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
+    background-color:var(--sorft-dark);
 }
 /* MainContainer */
 .About-container{
@@ -8,7 +9,7 @@
     margin: 0 auto;
     padding: 0 2.5%;
 
-    background-color:cadetblue;
+    /* background-color:cadetblue; */
     display: flex;
         /* flex-direction: column; */
         justify-content: space-between;
@@ -21,10 +22,11 @@
     width: 50%;
     height: 70%;
     margin-top: 10%;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     display: flex;
         flex-direction: column;
         justify-content: space-around;
+    color: var(--red);
 }
 
 .About-detail h2{
@@ -51,10 +53,11 @@
     width: 40%;
     height: 70%;
     margin-top: 10%;
-    background-color:aqua;
+    /* background-color:aqua; */
     display: flex;
         flex-direction: column;
         justify-content: space-around;
+    color: var(--red);
 } 
 
 .About-contact img{

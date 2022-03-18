@@ -1,5 +1,6 @@
 .Experience-bg{
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
+    background-color:var(--brown);
 }
 
 .Experience-container{
@@ -9,7 +10,7 @@
     padding: 0 2.5%;
 
     /* layTest */
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     
     display: flex;
         flex-direction: column;
@@ -21,7 +22,7 @@
     margin-bottom: 5%;
 
     /* LayTest  */
-    background-color:beige;
+    /* background-color:beige; */
 
     width: 100%;
     height: 80%;
@@ -32,8 +33,9 @@
     margin-bottom: 2rem;
 
     /* lay test */
-    background-color: brown;
+    /* background-color: brown; */
     border-radius: 20px;
+    color: var(--red);
 }
 
 .Experience-header h2{
@@ -49,7 +51,7 @@
 
 
     /* laytest */
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
     border-radius: 20px;
     
 }
@@ -66,18 +68,17 @@
     border-radius: 8px;
     text-align: right;
     /* padding: 2.5%; */
-    background-color: gray;
+    background-color: var(--sorft-dark);
     display: flex;
         flex-direction: row;
         /* flex-wrap: wrap; */
         gap: 10px;
-
 }
 
 
 
 .Experience-input-container-1{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 90%; 
     height: 100%;
     display: flex;
@@ -94,14 +95,15 @@
     max-height: 55%;
     border-radius: 8px;
     padding: 0% 2%;
-    background-color: red;
+    background-color: var(--brown);
     display: grid;
     place-items: center;
+    font-weight: 800;
 }
 
 
 .Experience-input-container-2{
-    background-color: blue;
+    /* background-color: blue; */
     width: 10%; 
     height: auto;
     display: grid;
@@ -109,44 +111,47 @@
 }
 
 .Experience-filters{
-    width:45%;
-    height: 100%;
+    width:50%;
+    height: 110%;
     /* border: none; */
     border-radius: 8px;
 
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
+    background-color: var(--sorft-dark);
     border-radius: 20px;
 
     display: flex;
         flex-wrap: wrap;
         align-items:center;
-        gap: 10px
+        gap: 10px;
+    padding: 2%;
+    font-weight: 800;
         
 }
 
 .Experience-filters span{
     height: 30px;
-
     border-radius: 5px;
     background-color: lightblue;
 
     padding: 5px
 }
 
-.Experience-card-container{
-    width: 100%;
+/* .Experience-card-container{
+    width: 100%; */
 
     /* height: 80%; */
-    height: 72%;
+    /* height: 72%; */
     
     
     /* laytest */
-    background-color: aqua;
-    border-radius: 20px;
+    /* background-color: aqua; */
+    /* background-color: var(--brown); */
+    /* border-radius: 20px; */
 
-    display:flex; 
-        justify-content: center;
-}
+    /* display:flex;  */
+        /* justify-content: center; */
+/* } */
 
 
 
@@ -157,7 +162,7 @@
         height: 30%;
         margin-bottom: 3rem;
         /* lay test */
-        background-color: brown;
+        /* background-color: brown; */
         border-radius: 20px;
     }
 
