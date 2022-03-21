@@ -48,6 +48,14 @@ export default {
             "description": "This Batabit landingpage with filtering app with optimal layout for the component depending on their device's screen size. this landing page is made by Diego De Granda member of Platzi",
             "page": "https://jyunakaike.github.io/batabit/",
         },
+        {
+            "id":7,
+            "image": "KukaCorp.jpg",
+            "title": "KukaCorp",
+            "languages":["html","css","react" ],
+            "description": "This KukaCorp landingpage was made with React with optimal layout for the component depending on their device's screen size",
+            "page": "https://kuka-corp.vercel.app/",
+        },
         
     ]
 

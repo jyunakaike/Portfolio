@@ -1,7 +1,13 @@
 import React from 'react'
-import './style.css'
+import {FiTwitter, FiGithub} from 'react-icons/fi';
+import {SiGmail} from 'react-icons/si';
+
+
+
 
 import profile from '../../assets/image/profile.jpg'
+import './style.css'
+
 
 export const Me = () => {
     return (
@@ -32,10 +38,9 @@ export const Me = () => {
                     <img src={profile} className='About-contact-img'></img>
 
                     <div className='About-contact-details'>
-                        <span>Twitter</span>
-                        <span>github</span>
-                        <span>Gmail</span>
-                        <span>Twitter</span>
+                        <span> <FiTwitter /> Twitter</span>
+                        <span> <FiGithub /> Github</span>
+                        <span> <SiGmail /> Gmail</span>
                     </div>
                 </div>
             </div>
