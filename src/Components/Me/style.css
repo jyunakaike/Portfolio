@@ -53,11 +53,12 @@
     width: 40%;
     height: 70%;
     margin-top: 10%;
-    /* background-color:aqua; */
+    background-color:var(--brown);
     display: flex;
         flex-direction: column;
         justify-content: space-around;
-    color: var(--red);
+    color: white;
+    border-radius: 15px;
 } 
 
 .About-contact img{

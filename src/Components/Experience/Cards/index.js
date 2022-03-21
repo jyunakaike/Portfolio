@@ -20,9 +20,9 @@ export const Card = ({ image, title, languages, description, page, filterEtiquet
                     }
                 </div>
 
-                <div className='Card-detail-description'>
+                {/* <div className='Card-detail-description'>
                     <p>{description}</p>
-                </div>
+                </div> */}
             </div>
 
         </div>

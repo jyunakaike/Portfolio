@@ -36,6 +36,7 @@
     /* background-color: brown; */
     border-radius: 20px;
     color: var(--red);
+    margin-bottom: 5%;
 }
 
 .Experience-header h2{
