@@ -17,8 +17,6 @@ export const Experience = () => {
 
   const listCards = initialState.portfolio
 
-  let etiquete = [];
-
   const clearFilter = () => {
     setShowEtiquete([]);
   }
