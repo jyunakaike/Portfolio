@@ -23,7 +23,7 @@ export const Experience = () => {
     setShowEtiquete([]);
   }
 
-  const clearFilterItem = () => {
+  const clearFilterItem = (i) => {
     const arr = showEtiquete.filter((item) => item !== i)
     setShowEtiquete(arr);
   }
@@ -54,7 +54,7 @@ export const Experience = () => {
                     {
                       (showEtiquete)
                         ?
-                        showEtiquete.map(etiquete => <div className='Experience-input-container-filter'>{etiquete}</div>)
+                        showEtiquete.map(etiquete => <div key={etiquete} className='Experience-input-container-filter' >{etiquete} <ImCross onClick={()=>clearFilterItem(etiquete)}/></div>)
                         :
                         null
                     }

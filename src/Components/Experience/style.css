@@ -97,9 +97,14 @@
     border-radius: 8px;
     padding: 0% 2%;
     background-color: var(--brown);
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
     font-weight: 800;
+    display:flex; 
+        justify-content: center;
+        align-items: center;
+    gap:10px;
+
 }
 
 
