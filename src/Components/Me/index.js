@@ -1,9 +1,16 @@
 import React from 'react'
-import {FiTwitter, FiGithub} from 'react-icons/fi';
-import {SiGmail} from 'react-icons/si';
+import { FiTwitter, FiGithub } from 'react-icons/fi';
+import { SiGmail } from 'react-icons/si';
 
+// react icons
 
-
+import { IoLogoJavascript } from 'react-icons/io';
+import { IoLogoHtml5 } from 'react-icons/io'
+import { IoLogoCss3 } from 'react-icons/io'
+import { IoLogoReact } from 'react-icons/io5'
+import { IoLogoAngular } from 'react-icons/io'
+import { SiTypescript } from 'react-icons/si'
+import { FaGitAlt } from 'react-icons/fa'
 
 import profile from '../../assets/image/profile.jpg'
 import './style.css'
@@ -23,13 +30,23 @@ export const Me = () => {
                     </div>
 
                     <div>
-                        <h3>Skills</h3>
-                        <p>
+                        <h2>Skills</h2>
+                        <div className='Skills-container'>
+                            <div><IoLogoJavascript className='Skills-icon'/> <p>JavaScript</p> </div>
+                            <div><IoLogoHtml5 className='Skills-icon' /> <p>Html</p></div>
+                            <div><IoLogoCss3 className='Skills-icon' /><p>Css</p></div>
+                            <div><IoLogoReact className='Skills-icon' /><p>React</p></div>
+                            <div><IoLogoAngular className='Skills-icon' /><p>Angular</p></div>
+                            <div><SiTypescript className='Skills-icon' /><p>TypeScript</p></div>
+                            <div><FaGitAlt className='Skills-icon' /><p>Git</p></div>
+                        </div>
+
+                        {/* <p>
                             JavaScript, React,  Html, CSS, Git, Angular, TypeScript
-                        </p>
+                        </p> */}
                         <h3>Learning</h3>
                         <p>
-                            Next.js, React-Native.
+                            Now I'm learing Next.js, React-Native.
                         </p>
                     </div>
 

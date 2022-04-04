@@ -46,6 +46,65 @@
 
 }
 
+.Skills-container{
+    display:flex;
+        justify-content: flex-start;
+        flex-wrap:wrap ;
+    gap: 0.5rem;
+    color: black;
+}
+.Skills-container div{
+    position: relative;
+    width: 25%;
+    height: 10%;
+    padding: 5%;
+    background-color:var(--brown);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.Skills-icon{
+    width: 2rem;
+    height: 50%;
+}
+
+.Skills-container div p{
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    opacity: 0;
+    width: 100%;
+    /* background-color: red; */
+    
+}
+
+
+.Skills-container div:hover {
+    background-color:var(--red);
+    transition: 0.4s;
+    color: white;
+}
+
+.Skills-container div:hover p{
+    opacity: 1;
+    transition:0.5;
+}
+
+.Skills-container div:hover .Skills-icon {
+    transition: 0.5s;
+    transform: translateY(-20px);
+    
+    /* opacity: 0; */
+}
+
+
+
+
+
+
+
+
 /* About-contact */
 
 .About-contact{
