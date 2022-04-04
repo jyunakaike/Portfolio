@@ -35,6 +35,20 @@
         align-items: center;
     /* background-color: blue; */
     color: var(--red);
+}
 
 
+.imageAni{
+    width: 50%;
+    position: relative;
+    animation: animate 2.5s alternate infinite;
+}
+
+@keyframes animate{
+    from{
+        bottom:0;
+    }
+    to{
+        bottom: 30px;
+    }
 }

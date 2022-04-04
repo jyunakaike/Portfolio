@@ -46,6 +46,7 @@ export const SliderImage = ({ children }) => {
     let settings = {
         dot: true,
         centerMode: true,
+        centerPadding: '100px',
         infinite: true,
         speed: 500,
         slidesToShow: 2,

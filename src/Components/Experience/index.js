@@ -37,6 +37,12 @@ export const Experience = () => {
         : setShowEtiquete([...showEtiquete, etiquete])
     }
   }
+
+  // const logdeletiquete = (item) =>{
+  //   console.log(item)
+
+  // }
+
   return (
     <section className='Experience-bg' >
       <div className='Experience-container' id='Experience'>
@@ -98,11 +104,10 @@ export const Experience = () => {
                   }
                   return returnBool();
                 })
-                  .map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
+                  .map(listCard => <Card key={listCard.id}  {...listCard} showEtiquete={showEtiquete}  setShowEtiquete={setShowEtiquete}/>)
                 :
-                listCards.map(listCard => <Card key={listCard.id}  {...listCard} filterEtiquete={() => filterEtiquete()} />)
+                listCards.map(listCard => <Card key={listCard.id}  {...listCard} showEtiquete={showEtiquete}  setShowEtiquete={setShowEtiquete}  />)
             }
-
           </SliderImage>
         </div>
       </div>

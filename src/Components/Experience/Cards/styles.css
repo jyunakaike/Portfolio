@@ -65,7 +65,7 @@
 
 }
 
-.Card-detail-skills span{
+.Card-detail-skills div{
     height: 30px;
     padding: 5px;
     border-radius: 5px;
