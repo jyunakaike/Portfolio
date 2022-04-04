@@ -5,6 +5,7 @@
 
     width: 100%;
     height: 20vh;
+    z-index: 2;
 }
 
 .Header-container {
@@ -24,6 +25,7 @@
     background-color: var(--dark);
     width: 100%;
     height: 10vh;
+    z-index: 2;
 }
 
 .small {
