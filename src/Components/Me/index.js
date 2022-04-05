@@ -55,9 +55,9 @@ export const Me = () => {
                     <img src={profile} className='About-contact-img'></img>
 
                     <div className='About-contact-details'>
-                        <span> <FiTwitter /> Twitter</span>
-                        <span> <FiGithub /> Github</span>
-                        <span> <SiGmail /> Gmail</span>
+                        <div> <FiTwitter className='About-contact-icon' /> <p>Twitter</p></div>
+                        <div> <FiGithub className='About-contact-icon' /> <p>Github</p>  </div>
+                        <div> <SiGmail className='About-contact-icon' /> <p>Gmail</p> </div>
                     </div>
                 </div>
             </div>
