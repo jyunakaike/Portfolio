@@ -27,20 +27,13 @@ export const Experience = () => {
   }
 
   const filterEtiquete = (etiquete) => {
-    console.log(etiquete)
-    if (showEtiquete.length === 0) {
-      setShowEtiquete([etiquete]);
-    }
-    else {
       (showEtiquete.includes(etiquete))
-        ? null
+        ? clearFilterItem(etiquete)
         : setShowEtiquete([...showEtiquete, etiquete])
-    }
   }
 
   // const logdeletiquete = (item) =>{
   //   console.log(item)
-
   // }
 
   return (
@@ -52,8 +45,8 @@ export const Experience = () => {
 
             <div className='Experience-container-input' >
               <div className='Experience-input'>
-                {/* <input  /> */}
-                <div className='Experience-input-container'>
+
+                {/* <div className='Experience-input-container'>
                   <div className='Experience-input-container-1'>
                     {
                       (showEtiquete)
@@ -66,21 +59,22 @@ export const Experience = () => {
                   <div className='Experience-input-container-2'>
                     <ImCross onClick={clearFilter} />
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className='Experience-filters'>
                 Filter:
-                <span onClick={() => filterEtiquete("react")}>React</span>
-                <span onClick={() => filterEtiquete("html")}>Html</span>
-                <span onClick={() => filterEtiquete("js")}>Js</span>
-                <span onClick={() => filterEtiquete("css")}>Css</span>
-                <span onClick={() => filterEtiquete("responsive")}>Responsive</span>
-                <span onClick={() => filterEtiquete("nextjs")}>Nextjs</span>
-                <span onClick={() => filterEtiquete("mobilefirst")}>mobileFirst</span>
-              </div>
 
+                <div className='Experience-filters-button' onClick={() => filterEtiquete("react")}>React</div>
+                <div className='Experience-filters-button' onClick={() => filterEtiquete("html")}>Html</div>
+                <div className='Experience-filters-button' onClick={() => filterEtiquete("js")}>Js</div>
+                <div className='Experience-filters-button' onClick={() => filterEtiquete("css")}>Css</div>
+                <div className='Experience-filters-button' onClick={() => filterEtiquete("responsive")}>Responsive</div>
+                <div className='Experience-filters-button' onClick={() => filterEtiquete("nextjs")}>Nextjs</div>
+                <div className='Experience-filters-button' onClick={() => filterEtiquete("mobilefirst")}>mobileFirst</div>
+              </div>
             </div>
+
           </div>
 
           <SliderImage listCards={listCards} >
@@ -104,9 +98,9 @@ export const Experience = () => {
                   }
                   return returnBool();
                 })
-                  .map(listCard => <Card key={listCard.id}  {...listCard} showEtiquete={showEtiquete}  setShowEtiquete={setShowEtiquete}/>)
+                  .map(listCard => <Card key={listCard.id}  {...listCard} showEtiquete={showEtiquete} setShowEtiquete={setShowEtiquete} />)
                 :
-                listCards.map(listCard => <Card key={listCard.id}  {...listCard} showEtiquete={showEtiquete}  setShowEtiquete={setShowEtiquete}  />)
+                listCards.map(listCard => <Card key={listCard.id}  {...listCard} showEtiquete={showEtiquete} setShowEtiquete={setShowEtiquete} />)
             }
           </SliderImage>
         </div>
