@@ -63,7 +63,13 @@
 }
 .Header-Categories h2:hover{
     color: white;
+}
 
+@media (max-width: 770px) {
+    .Header-Categories{
+        display: none;
+    }
+    
 }
 
 
