@@ -77,8 +77,6 @@
         gap: 10px;
 }
 
-
-
 .Experience-input-container-1{
     /* background-color: yellow; */
     width: 90%; 
@@ -149,6 +147,23 @@
     cursor: pointer;
     margin-left: 1rem;
 }
+
+.Experience-filters-button:hover{
+    transform: scale(1.4);
+    transition: 0.5s;
+
+}
+
+@keyframes scale {
+    from{
+        transform: scale(0);
+    }
+    to{
+        
+    }
+    
+}
+
 .Experience-filters-button:active{
     height: 30px;
     padding: 5px;

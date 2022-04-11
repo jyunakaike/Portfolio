@@ -63,13 +63,6 @@ export const Experience = () => {
                   </div>
                 </div> */}
               </div>
-
-              {
-                (showEtiquete.map(element => {
-
-                }))
-              }
-
               <div className='Experience-filters'>
                 Filter:
                 <div className={(showEtiquete.includes('react')) ? 'Experience-filters-button-active' : 'Experience-filters-button'} onClick={() => filterEtiquete("react")}>React</div>

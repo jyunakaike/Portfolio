@@ -18,14 +18,7 @@ export const Introduction = () => {
           {/* Aqui hay una imagen */}
           {/* <Jyunik /> */}
           {/* <img src={Jyunik} /> */}
-          {/* <img src={Jyunik} alt="React Logo" /> */}
-          <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 904 722">
-            <g id="Capa_1-2" data-name="Capa 1">
-              <image width="904" height="722" xlinkHref={Jyunik} />
-            </g>
-          </svg>
-
-          {/* <img  src={icon} className="imageAni"/> */}
+          <img src={Jyunik} alt="React Logo" className="imageAni" />
         </article>
       </div>
     </section>
