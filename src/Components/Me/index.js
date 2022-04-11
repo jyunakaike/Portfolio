@@ -18,8 +18,8 @@ import './style.css'
 
 export const Me = () => {
     return (
-        <section className='About-bg' >
-            <div className='About-container' id='About-me'>
+        <section className='About-bg'  >
+            <div className='About-container' id='About-me' >
                 <div className='About-detail'>
                     <div>
                         <h2>About Me</h2>
@@ -44,7 +44,7 @@ export const Me = () => {
                         {/* <p>
                             JavaScript, React,  Html, CSS, Git, Angular, TypeScript
                         </p> */}
-                        <h3>Learning</h3>
+                        <h2>Learning</h2>
                         <p>
                             Now I'm learing Next.js, React-Native.
                         </p>
