@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './style.css';
 
-export const Header = ({setRef}) => {
+export const Header = ({useMoveSection}) => {
 
     const [showFixed, setShowFixed] = useState(false)
 
@@ -17,7 +17,7 @@ export const Header = ({setRef}) => {
     }, [showFixed])
 
     const sectionClick = (e) => {
-        setRef(e)
+        useMoveSection(e)
     }
 
     return (

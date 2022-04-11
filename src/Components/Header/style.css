@@ -59,6 +59,11 @@
 .Header-Categories h2{
     /* font-size: 1.3rem; */
     color: var(--red);
+    cursor: pointer;
+}
+.Header-Categories h2:hover{
+    color: white;
+
 }
 
 

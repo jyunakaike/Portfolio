@@ -12,7 +12,15 @@
     display: flex;
         justify-content: space-between;
         align-items: center;
+    position: relative;
 }
+.Intro-ArrowDown{
+    position: absolute;
+    bottom: 10%;
+    width: 3rem;
+    height: 3rem;
+}
+
 .Intro-Title{
     width: 60%;
     height: 90%;
@@ -22,10 +30,6 @@
         align-items: flex-start;
     /* background-color: rebeccapurple; */
 }
-
-/* .Intro-Title h1{
-    color: white;
-} */
 
 .Intro-Detail{
     width: 40%;
