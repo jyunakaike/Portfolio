@@ -13,7 +13,7 @@ const NextArrow = ({ currentSlide, slideCount, ...props }) => {
         <button
             {...props}
             className={
-                "slick-next slick-arrow" 
+                "slick-next slick-arrow"
                 // "slick-next slick-arrow" +
                 // (currentSlide === 0 ? " slick-disabled" : "")
             }
@@ -46,17 +46,43 @@ export const SliderImage = ({ children }) => {
     let settings = {
         dot: true,
         centerMode: true,
-        centerPadding: '100px',
+        centerPadding: '60px',
+
         infinite: true,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
         cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    dots: true,
+                    slidesToShow: 2,
+                    // slidesToScroll:4,
+                    infinite: true,
+                    // centerMode: true,
+                    // centerPadding: '60px',
+                }
+            },
+            {
+                breakpoint: 770,
+                settings: {
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: true,
+                    // centerPadding: '20rem',
+                    // centerPadding: '0%',
+                }
+            }
+        ],
         NextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
     }
     return (
-        <Slider {...settings}>
+        <Slider className='slider-container' {...settings}>
             {children}
         </Slider>
     )

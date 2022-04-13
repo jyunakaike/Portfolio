@@ -32,7 +32,7 @@ export const Me = () => {
                     <div>
                         <h2>Skills</h2>
                         <div className='Skills-container'>
-                            <div><IoLogoJavascript className='Skills-icon'/> <p>JavaScript</p> </div>
+                            <div><IoLogoJavascript className='Skills-icon' /> <p>JavaScript</p> </div>
                             <div><IoLogoHtml5 className='Skills-icon' /> <p>Html</p></div>
                             <div><IoLogoCss3 className='Skills-icon' /><p>Css</p></div>
                             <div><IoLogoReact className='Skills-icon' /><p>React</p></div>
@@ -41,9 +41,8 @@ export const Me = () => {
                             <div><FaGitAlt className='Skills-icon' /><p>Git</p></div>
                         </div>
 
-                        {/* <p>
-                            JavaScript, React,  Html, CSS, Git, Angular, TypeScript
-                        </p> */}
+                    </div>
+                    <div>
                         <h2>Learning</h2>
                         <p>
                             Now I'm learing Next.js, React-Native.

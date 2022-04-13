@@ -62,7 +62,7 @@
 
 @media (max-width: 770px) {
     .Intro-container {
-        height: 100vh;
+        height: auto;
         width: 90%;
         margin: 0 auto;
         padding: 0 2.5%;
@@ -75,31 +75,39 @@
     }
 
     .Intro-Detail {
-        position: absolute;
-        top: 15%;
-        width: 40%;
+        /* position: absolute; */
+        top: 18%;
+        width: 80%;
         height: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* margin-bottom: 10%; */
+        margin-top: 40%;
         /* background-color: blue; */
         /* background-color: white; */
+        display: none;
     }
 
     .Intro-Title {
-        width: 80%;
+        width: 100%;
         height: 90%;
         display: flex;
-        margin-top: 40%;
+        margin-top: 25%;
+        margin-bottom: 20%;
+        padding: 20% 5% 5% 5%;
+
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         /* background-color: rebeccapurple; */
+        border-radius: 15px;
+
     }
 
     .Intro-ArrowDown {
         position: absolute;
-        bottom: 5%;
+        bottom: 0%;
         width: 3rem;
         height: 3rem;
     }

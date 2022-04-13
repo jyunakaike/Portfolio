@@ -5,7 +5,7 @@
 
 .Experience-container{
     width: 90%;
-    height: 90vh;
+    height: 100vh;
     margin: 0 auto;
     padding: 0 2.5%;
 
@@ -18,7 +18,7 @@
         /* align-items: center; */
 }
 .Experience-detail-container {
-    margin-top: 10%;
+    margin-top: 7%;
     margin-bottom: 5%;
 
     /* LayTest  */
@@ -132,13 +132,6 @@
     font-weight: 800;
 }
 
-/* .Experience-filters span{
-    height: 30px;
-    border-radius: 5px;
-    background-color: lightblue;
-
-    padding: 5px
-} */
 .Experience-filters-button{
     height: 30px;
     border-radius: 5px;
@@ -169,23 +162,6 @@
     margin-left: 1rem;
 }
 
-
-/* .Experience-card-container{
-    width: 100%; */
-
-    /* height: 80%; */
-    /* height: 72%; */
-    
-    
-    /* laytest */
-    /* background-color: aqua; */
-    /* background-color: var(--brown); */
-    /* border-radius: 20px; */
-
-    /* display:flex;  */
-        /* justify-content: center; */
-/* } */
-
 @media (max-height:720px) {
     .Experience-header{
         width: 100%;
@@ -199,30 +175,27 @@
 
 
 @media (max-width:750px) {
-    .Experience-container-input{
-        width: 100%;
-        height: 100%;
-        margin-bottom: 40px;
+    .Experience-container{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 2.5%;
+    
+        /* layTest */
+        /* background-color: chartreuse; */
         
         display: flex;
             flex-direction: column;
-            justify-content: space-between;
-        border-radius: 20px;
-        /* background-color: aqua; */
+            justify-content: flex-start;
+            /* align-items: center; */
+    }
+    .Experience-header{
+        margin-bottom: 13%;
+    }
+    .Experience-header h2{
+        margin-bottom: 10%;
     }
 
-    .Experience-input{
-        width: 100%;
-        height: 50%;
-        /* margin-bottom: 5%; */
-        /* display:none; */
-    }
-
-    /* .Experience-filters{
-        width: 100%;
-        height: 50%;
-        display:none;
-    } */
 }
     
 
