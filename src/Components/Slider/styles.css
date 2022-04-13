@@ -3,7 +3,6 @@
     /* height: 100%; */
     /* background-color: aqua; */
     margin: 10% auto;
-    
 }
 
 .slick-prev {
@@ -27,9 +26,15 @@
 
 @media (max-width:750px) {
     .slider-container {
-        width: 80%;
+        width: 90%;
         height: 50%;
         /* background-color: aqua; */
         /* margin: 25% auto; */
+    }
+    .slick-prev {
+        left: -40px;
+    }
+    .slick-next {
+        right: -12px;
     }
 }

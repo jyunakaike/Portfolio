@@ -48,31 +48,32 @@ export const SliderImage = ({ children }) => {
         centerMode: true,
         centerPadding: '60px',
 
-        infinite: true,
+        // infinite: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         cssEase: "linear",
         responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    dots: true,
-                    slidesToShow: 2,
-                    // slidesToScroll:4,
-                    infinite: true,
-                    // centerMode: true,
-                    // centerPadding: '60px',
-                }
-            },
+            // {
+            //     breakpoint: 1024,
+            //     settings: {
+            //         dots: true,
+            //         slidesToShow: 2,
+            //         // slidesToScroll:4,
+            //         infinite: true,
+            //         // centerMode: true,
+            //         // centerPadding: '60px',
+            //     }
+            // },
             {
                 breakpoint: 770,
                 settings: {
                     dots: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    infinite: true,
-                    centerMode: true,
+                    centerMode: false,
+                    // infinite: true,
+                    // centerMode: true,
                     // centerPadding: '20rem',
                     // centerPadding: '0%',
                 }
