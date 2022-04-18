@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <footer>
             <div className='footer-container'>
-                <div className='footer-container--title'> Contacts </div>
+                <div className='footer-container--title'>Copyright c 2021 All Rights Reserved  </div>
                 <ul className='footer-container--list'>
                     {/* <li>twitter</li>
                     <li>Email</li>

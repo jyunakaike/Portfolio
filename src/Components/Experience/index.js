@@ -48,7 +48,7 @@ export const Experience = () => {
               <div className={(showEtiquete.includes('css')) ? 'Experience-filters-button-active' : 'Experience-filters-button'} onClick={() => filterEtiquete("css")}>Css</div>
               <div className={(showEtiquete.includes('responsive')) ? 'Experience-filters-button-active' : 'Experience-filters-button'} onClick={() => filterEtiquete("responsive")}>Responsive</div>
               <div className={(showEtiquete.includes('nextjs')) ? 'Experience-filters-button-active' : 'Experience-filters-button'} onClick={() => filterEtiquete("nextjs")}>Nextjs</div>
-              <div className={(showEtiquete.includes('mobilefirst')) ? 'Experience-filters-button-active' : 'Experience-filters-button'} onClick={() => filterEtiquete("mobilefirst")}>mobileFirst</div>
+              {/* <div className={(showEtiquete.includes('mobilefirst')) ? 'Experience-filters-button-active' : 'Experience-filters-button'} onClick={() => filterEtiquete("mobilefirst")}>mobileFirst</div> */}
             </div>
           </div>
 

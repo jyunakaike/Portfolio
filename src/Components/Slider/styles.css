@@ -11,7 +11,8 @@
 
 .slick-prev:before {
     font-size: 40px;
-    color: var(--red);
+    /* color: var(--red); */
+    color: white;
 
 }
 
@@ -21,7 +22,8 @@
 
 .slick-next:before {
     font-size: 40px;
-    color: var(--red);
+    /* color: var(--red); */
+    color: white;
 }
 
 @media (max-width:750px) {

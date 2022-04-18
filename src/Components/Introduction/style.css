@@ -47,7 +47,6 @@
     from {
         bottom: 0;
     }
-
     to {
         bottom: 30px;
     }
@@ -58,6 +57,12 @@
     bottom: 10%;
     width: 3rem;
     height: 3rem;
+}
+
+.Intro-ArrowDown:hover {
+    transform:scale(1.5);
+    transition:0.5s;
+    color: white;
 }
 
 @media (max-width: 770px) {

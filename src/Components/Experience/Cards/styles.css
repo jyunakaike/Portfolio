@@ -1,8 +1,8 @@
 /* card */
-.Experience-card{
+.Experience-card {
     width: 90%;
     /* width: 60%; */
-    height:400px;
+    height: 400px;
     /* border: solid 1px black; */
     border-radius: 15px;
     /* background-color: aqua; */
@@ -10,24 +10,86 @@
     /* margin-right: 2.5%; */
 
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 }
 
-.Experience-card a{
+/* backface visibility */
+
+.card {
+    width: 90%;
+    /* width: 60%; */
+    height: 400px;
+    /* height: 340px; */
+    /* width: 250px; */
+    position: relative;
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.front {
+    background: linear-gradient(#08aeea, #2af598);
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: linear-gradient(#f8da61, #ff5acd);
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+/* .container:hover .card {
+    transform: rotateY(180deg);
+
+} */
+
+.container:hover  {
+    /* background-color: white; */
+    transform:scaleX(1.15);
+}
+
+
+.container {
+    perspective: 1000px;
+}
+
+
+
+
+
+
+/* ----------------------- */
+
+/* .Experience-card a{
     width: 100%;
     height: 50%;
-
+} */
+.Card-image-wrapper {
+    width: 100%;
+    height: 50%;
 }
 
-.Card-image{
+
+.Card-image {
     width: 100%;
     height: 100%;
 
-    border-radius: 5px 5px 0 0; 
+    border-radius: 5px 5px 0 0;
     /* background-color: cadetblue; */
 }
 
-.Card-detail{
+.Card-detail {
     width: 100%;
     height: 50%;
 
@@ -35,10 +97,10 @@
 
     border-radius: 0px 0px 5px 5px;
     /* background-color:violet; */
-    background-color:var(--sorft-dark);
+    background-color: var(--sorft-dark);
 
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     color: white;
     font-weight: 500;
 }
@@ -57,59 +119,59 @@
     height: 40%;
     width: 100%;
 
-    margin: 10px 0 ;
+    margin: 10px 0;
     overflow: hidden;
 
     display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap:10px;
-        flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 
 }
 
-.Card-detail-skills div{
+.Card-detail-skills div {
     height: 30px;
     padding: 5px;
     border-radius: 5px;
     background-color: red;
 }
 
-.Card-detail-description{
+.Card-detail-description {
     height: 50%;
     overflow: hidden;
 }
 
 
 @media (max-height:720px) {
-    .Experience-card{
+    .Experience-card {
         width: 60%;
-        height:18rem;
+        height: 18rem;
 
         border-radius: 5px;
-    
+
         margin-right: 2.5%;
         display: flex;
-            flex-direction: column;
+        flex-direction: column;
     }
 
     .Card-detail-skills {
         height: 90%;
         width: 100%;
-    
-        margin: 10px 0 ;
+
+        margin: 10px 0;
         overflow: hidden;
-    
+
         display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap:10px;
-            flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width:770px) {
-    .Experience-card{
+    .Experience-card {
         width: 95%;
         /* height:18rem;
 
@@ -122,4 +184,3 @@
 
 
 }
-

@@ -44,7 +44,7 @@ export default {
             "id":6,
             "image": "Batabit.jpg",
             "title": "Batabit",
-            "languages":["html","css","mobileFirst" ],
+            "languages":["html","css" ],
             "description": "This Batabit landingpage with filtering app with optimal layout for the component depending on their device's screen size. this landing page is made by Diego De Granda member of Platzi",
             "page": "https://jyunakaike.github.io/batabit/",
         },
